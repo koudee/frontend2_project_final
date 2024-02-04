@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />     <title>TodoList</title>
+    </head>
+
+    <body>
+
+        <main>
+            <div class="image-container">
+
+                <img src="Assets/Logo.png" alt="logo">
+            </div>
+
+            <!-- task input -->
+
+            <form class="input_task">
+
+                <input type="text" placeholder="Enter Your To-do List Task" id="input">
+                <input type="date" id="dueDate" class="date">
+                <button class="addTask">Add <i class="fa-solid fa-circle-plus"></i><span class="material-symbols-outlined">
+                       
+                    </span>
+                </button>
+
+
+
+
+            </form>
+
+            <div class="container">
+                <div class="task-priority">
+                    <label for="priority">Priority:</label>
+                    <select id="priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+
+                <!-- Status dropdown -->
+                <div class="task-status">
+                    <label for="status">Status:</label>
+                    <select id="status">
+                        <option value="in-progress">In Progress</option>
+                        <option value="done">Done</option>
+                    </select>
+                </div>
+
+                <!-- Search input -->
+                <div class="search">
+                    <label for="search">Search:</label>
+                    <input type="text" class="search-input" id="search" placeholder="Enter search query">
+                </div>
+                
+                <button id="filterBtn">Filter</button>
+            </div>
+
+
+
+
+            <div class="todo-status">
+                <div class="total-todos"></div>
+                <div class="high-priority"></div>
+
+            </div>
+
+            <!-- Js Part -->
+            <div class="todo-tasks">
+
+                <div class="tasks">
+                    <input type="checkbox" >
+                    <p>lorem50</p>
+                      <small style="color: white;">Due:25/5/2024</small> 
+
+                      <div class="priorites">
+                        <div class="high-priority">high</div>
+                        <div class="status">In-progress</div>
+                      </div>
+                     
+                     <div class="btn-container">
+                        <button class="material-symbols-outlined">
+                            edit
+                        </button>
+                        <button class="material-symbols-outlined">
+                            delete
+                        </button>
+                    </div>  
+
+                 </div> 
+                <br>
+                  <div class="priorites">
+                        <div class="task-priority">
+                            <label for="priority">Priority:</label>
+                            <select id="priority"> 
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+        
+                        <!-- Status dropdown  -->
+               <div class="task-status">
+                    <label for="status">Status:</label>
+                    <select id="status">
+                        <option value="todo">To-do</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done">Done</option>
+                    </select>
+                </div>
+              </div>   
+
+
+
+
+
+
+
+            </div>
+
+            <div class="todo-started">
+                <div class="total-started">Started 0</div>
+                <div class="high-priority"></div>
+
+            </div>
+
+            <div class="todo-started">
+                <div class="total-completed"></div>
+                <div class="high-priority"></div>
+
+            </div>
+
+
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
